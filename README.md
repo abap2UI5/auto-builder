@@ -30,7 +30,7 @@ Additionally, you can fork this repository and rename the artifacts to your own 
 ...
 ```
 
-### PR
+### Contribution
 This repository contains auto-generated code from every commit made to the main abap2UI5 repository. Please contribute via the main abap2UI5 project for code changes. Pull Requests can not be accepted here, as changes will be overwritten automatically.
 
 ### Issues

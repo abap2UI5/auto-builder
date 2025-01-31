@@ -1,0 +1,38 @@
+name: build_750
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 2 * * *' # Runs daily at midnight UTC + 2
+
+jobs:
+  build_750:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+      with:
+        ref: 750
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16'
+
+    - name: Install Dependencies
+      run: |
+        npm install
+
+    - name: Run Build Script
+      run: |
+        npm run init
+        npm run clone
+        npm run copy
+        npm run cleanup
+
+    - name: Open Pull Request
+      uses: peter-evans/create-pull-request@v4
+      with:
+        title: Automatic Update
+        commit-message: "Automated changes by nightly job"

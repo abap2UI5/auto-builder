@@ -1,6 +1,6 @@
 # abap2UI5 Builds
 
-[![build_750](https://github.com/abap2UI5/builds/actions/workflows/build_750.yml/badge.svg)](https://github.com/abap2UI5/builds/actions/workflows/build_750.yml)
+[![build_750](https://github.com/abap2UI5/test/actions/workflows/build_750.yml/badge.svg)](https://github.com/abap2UI5/test/actions/workflows/build_750.yml)
 
 This repository provides builds of abap2UI5 for various SAP systems. Switch to the branch you need and install it with a single abapGit pull.
 

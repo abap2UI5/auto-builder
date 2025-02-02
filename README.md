@@ -24,7 +24,12 @@ This repository provides builds of abap2UI5 for various SAP systems. Switch to t
 #### Addons
 | Branch    | Content   | 
 |-----------|-------------------| 
-| 750+addons      | layout-variant, alv-wrapper  |
+| 750+addons      | layout-variant, rfc-connector, laucnhpad-kpi  |
+
+#### Apps
+| Branch    | Content   | 
+|-----------|-------------------| 
+| 750+addons+apps      | table-content-loader, SE16  |
 
 ### Namespace
 All artifacts are generated under the namespace `zabap2ui5`. This differs from the main repository to allow both versions to coexist on the same system. One version for modifications and contributions (z2ui5), this one for productive usage (zabap2ui5).

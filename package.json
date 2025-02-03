@@ -5,6 +5,8 @@
     "scripts": {
       "init": "rm -rf src/01/* && rm -rf src/02/*",
       "clone": "git clone https://github.com/abap2UI5-renamed/abap2UI5 && git clone https://github.com/abap2UI5-renamed/frontend",
+      "clone_addons": "git clone https://github.com/abap2UI5-addons/layout-variant-management && git clone https://github.com/abap2UI5-addons/ui-extensions",
+      "copy_addons": "cp -r layout-variant-management/src/* src/03/01 && cp -r ui-extensions/src/* src/03/02",
       "copy": "cp -r abap2UI5/src/* src/01 && cp -r frontend/src/* src/02",
       "cleanup": "rm -rf abap2UI5 && rm -rf frontend"
     },

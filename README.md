@@ -12,7 +12,6 @@ This repository provides builds of abap2UI5 for various SAP systems. Switch to t
 | cloud     | S/4 Public Cloud, BTP ABAP Environment |
 | 750      | S/4 Private Cloud, S/4 On-Premise    |
 | 702      | R/3 NetWeaver                   |
-| node      | node, open-abap                  |
 
 #### Content
 | Branch    | Language, Version   | Content | Info                | 
@@ -20,7 +19,6 @@ This repository provides builds of abap2UI5 for various SAP systems. Switch to t
 | cloud     | ABAP, Cloud | abap2UI5, http handler       | |
 | 750      | ABAP, Standard  | abap2UI5, http handler, bsp  | |
 | 702      | ABAP, Standard  | abap2UI5, http handler       | Downported |
-| node      | JavaScript, Node.js | abap2UI5, icf shim     |  Transpiled |
 
 #### Addons
 | Branch    | Content   | 

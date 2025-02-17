@@ -17,10 +17,7 @@ This repository provides builds of abap2UI5 for various SAP systems. Switch to t
 |-----------|------------------|
 | cloud     | abap2UI5, http handler       |
 | standard      |  abap2UI5, http handler, bsp  |
-
-#### Addons
-| Branch    | Content   | 
-|-----------|-------------------| 
+|   -    |    |
 | +addons  | layout-variant, table-maintenance, sql-console |
 
 

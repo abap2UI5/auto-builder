@@ -7,28 +7,22 @@ This repository provides builds of abap2UI5 for various SAP systems. Switch to t
 
 #### Branch
 
-| Branch    | System                | 
-|-----------|----------------------------|
-| cloud     | S/4 Public Cloud, BTP ABAP Environment |
-| 750      | S/4 Private Cloud, S/4 On-Premise    |
-| 702      | R/3 NetWeaver                   |
+| Branch    | Language Version | System                | 
+|-----------| ---------------------------| ----------------------------|
+| cloud     | ABAP Cloud | S/4 Public Cloud, BTP ABAP Environment |
+| standard  | Standard ABAP | S/4 Private Cloud, S/4 On-Premise, R/3 NetWeaver    |
 
 #### Content
-| Branch    | Language, Version   | Content | Info                | 
-|-----------|-------------------| ------------------| ------------------|
-| cloud     | ABAP, Cloud | abap2UI5, http handler       | |
-| 750      | ABAP, Standard  | abap2UI5, http handler, bsp  | |
-| 702      | ABAP, Standard  | abap2UI5, http handler       | Downported |
+| Branch    | Content |
+|-----------|------------------|
+| cloud     | abap2UI5, http handler       |
+| standard      |  abap2UI5, http handler, bsp  |
 
 #### Addons
 | Branch    | Content   | 
 |-----------|-------------------| 
-| 750+addons      | layout-variant, rfc-connector, laucnhpad-kpi  |
+| +addons  | layout-variant, table-maintenance, sql-console |
 
-#### Apps
-| Branch    | Content   | 
-|-----------|-------------------| 
-| 750+addons+apps      | table-content-loader, SE16  |
 
 ### Namespace
 All artifacts are generated under the namespace `zabap2ui5`. This differs from the main repository to allow both versions to coexist on the same system. One version for modifications and contributions (z2ui5), this one for productive usage (zabap2ui5).

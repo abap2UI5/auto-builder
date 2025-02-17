@@ -10,7 +10,7 @@ This repository provides builds of abap2UI5 for various SAP systems. Switch to t
 | Branch    | Language Version | System                | 
 |-----------| ---------------------------| ----------------------------|
 | cloud     | ABAP Cloud | S/4 Public Cloud, BTP ABAP Environment |
-| standard  | Standard ABAP | S/4 Private Cloud, S/4 On-Premise, R/3 NetWeaver    |
+| standard  | Standard ABAP | S/4 Private Cloud, S/4 On-Premise, R/3 NetWeaver >750   |
 
 #### Content
 | Branch    | Content |

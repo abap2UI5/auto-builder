@@ -5,7 +5,7 @@ const path = require('path');
 // Get the config file path from the command line argument or use the default
 const args = process.argv.slice(2);
 const configArgIndex = args.indexOf('--config');
-const configFilePath = configArgIndex !== -1 && args[configArgIndex + 1] ? args[configArgIndex + 1] : path.join(__dirname, '.setup/config-build.jsonc');
+const configFilePath = configArgIndex !== -1 && args[configArgIndex + 1] ? args[configArgIndex + 1] : path.join(__dirname, '.setup/build.jsonc');
 
 // Load configuration from the JSON file
 const config = JSON.parse(fs.readFileSync(configFilePath, 'utf8'));
@@ -14,8 +14,10 @@ const repos = reposConfig.repos;
 const activeRepos = config.repositories;
 const selectedBranch = config.abap_version;
 
-const inputDir = path.join(__dirname, '..', config.input);
-const outputDir = path.join(__dirname, '..', config.output);
+// Load paths from the separate JSON file
+const pathsConfig = JSON.parse(fs.readFileSync(path.join(__dirname, 'config-build.jsonc'), 'utf8'));
+const inputDir = path.join(__dirname, '..', pathsConfig.input);
+const outputDir = path.join(__dirname, '..', pathsConfig.output);
 
 // Ensure the input directory exists
 if (!fs.existsSync(inputDir)) {

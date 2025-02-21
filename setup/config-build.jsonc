@@ -1,15 +1,4 @@
 {
-  "abap_version": "Cloud",
-  "input": "input",
-  "output": "dist",
-  "rename": {
-    "active": false,
-    "oldName": "z2ui5_(.*)",
-    "newName": "z2ui51222_$1"
-  },
-  "repositories": [
-    "abap2UI5",
-    "samples"
-  ],
-  "config_repos": "./config-repos.jsonc"
+    "input": "input",
+    "output": "dist"
 }

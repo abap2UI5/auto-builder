@@ -45,17 +45,6 @@ Check out all supported projects, each with different compatibility [here:](http
 * v750: S/4 Private Cloud, S/4 On-Premise, R/3 NetWeaver 750
 * v702: R/3 NetWeaver <750
 
-### Default Builds
-Pre-generated builds are available. Simply switch to the required branch:
-
-| Branch    | Status                | 
-|-----------| ---------------------------| 
-| cloud     | [![build_750](https://github.com/abap2UI5/test/actions/workflows/build_750.yml/badge.svg)](https://github.com/abap2UI5/test/actions/workflows/build_750.yml) |
-| v750   |  [![build_750_addons](https://github.com/abap2UI5/builds/actions/workflows/build_750_addons.yml/badge.svg)](https://github.com/abap2UI5/builds/actions/workflows/build_750_addons.yml)  |
-| v702   |  [![build_750_addons](https://github.com/abap2UI5/builds/actions/workflows/build_750_addons.yml/badge.svg)](https://github.com/abap2UI5/builds/actions/workflows/build_750_addons.yml)  |
-
-
-
 ### Namespace
 All artifacts are generated under the namespace `zabap2ui5`. This differs from the main repository to allow both versions to coexist on the same system. One version for modifications and contributions (z2ui5), this one for productive usage (zabap2ui5).
 
@@ -63,10 +52,6 @@ Additionally, you can fork this repository and rename the artifacts to your own 
 ```
 ...
 ```
-
-
-### Contribution
-This repository contains auto-generated code from every commit made to the main abap2UI5 repository. Please contribute via the main abap2UI5 project for code changes. Pull Requests can not be accepted here, as changes will be overwritten automatically.
 
 ### Issues
 For bug reports or feature requests, please open an issue in the [abap2UI5 repository.](https://github.com/abap2UI5/abap2UI5/issues)

@@ -1,7 +1,7 @@
 {
   "abap_version": "Cloud",
   "input": "input",
-  "output": "output",
+  "output": "dist",
   "rename": {
     "active": false,
     "oldName": "z2ui5_(.*)",

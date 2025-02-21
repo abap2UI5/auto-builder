@@ -15,7 +15,7 @@ Clone this repository and adjust the configuration for your build process [here:
   "rename": {
     "active": false,
     "oldName": "z2ui5_(.*)",
-    "newName": "z2ui51222_$1"
+    "newName": "zabap2ui5_$1"
   },
   "repositories": [
     "abap2UI5",

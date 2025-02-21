@@ -1,6 +1,6 @@
 # abap2UI5-builder
 
-This repository provides scripts to create abap2UI5 projects that can be installed with a single abapGit pull.
+This repository provides scripts to create abap2UI5 projects, installable with a single abapGit pull.
 
 Features:
 * Integrates abap2UI5, frontend, and multiple addons into a single project.

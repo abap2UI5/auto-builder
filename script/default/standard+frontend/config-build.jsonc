@@ -1,0 +1,20 @@
+{
+  "inputDir": "input",
+  "outputDir": "src",
+  "repos": [
+    {
+      "url": "https://github.com/abap2UI5/abap2UI5",
+      "branch": "702",
+      "active": true,
+      "sourceDir": "src",
+      "targetDir": "01"
+    },
+    {
+      "url": "https://github.com/abap2UI5/samples",
+      "branch": "702",
+      "active": true,
+      "sourceDir": "src",
+      "targetDir": "02"
+    }
+  ]
+}

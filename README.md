@@ -47,10 +47,6 @@ Check out all supported projects, each with different compatibility [here:](http
 ### Namespace
 All artifacts are generated under the namespace `zabap2ui5`. This differs from the main repository to allow both versions to coexist on the same system. One version for modifications and contributions (z2ui5), this one for productive usage (zabap2ui5).
 
-Additionally, you can fork this repository and rename the artifacts to your own custom namespace using:
-```
-...
-```
 ### Credits
 * Automagic standalone renaming of ABAP objects [(SCN - 20.02.2021)](https://community.sap.com/t5/application-development-blog-posts/automagic-standalone-renaming-of-abap-objects/ba-p/13499851)
 

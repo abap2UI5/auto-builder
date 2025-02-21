@@ -1,5 +1,5 @@
 {
-  "branch": "Cloud", 
+  "branch": "Cloud",
   "inputDir": "input",
   "outputDir": "output",
   "rename": {
@@ -7,5 +7,9 @@
     "oldName": "z2ui5_(.*)",
     "newName": "z2ui51222_$1"
   },
+  "active_repos": [
+    "abap2UI5",
+    "samples"
+  ],
   "config_repos": "./config-repos.jsonc"
 }

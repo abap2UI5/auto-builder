@@ -11,6 +11,7 @@ const configFilePath = configArgIndex !== -1 && args[configArgIndex + 1] ? args[
 const config = JSON.parse(fs.readFileSync(configFilePath, 'utf8'));
 const reposConfig = JSON.parse(fs.readFileSync(path.join(__dirname, config.config_repos), 'utf8'));
 const repos = reposConfig.repos;
+const activeRepos = config.active_repos;
 const selectedBranch = config.branch;
 
 const inputDir = path.join(__dirname, '..', config.inputDir);
@@ -41,7 +42,7 @@ if (fs.existsSync(templateDir)) {
 }
 
 repos.forEach(repo => {
-  if (!repo.active) {
+  if (!activeRepos.includes(repo.name)) {
     console.log(`Skipping repository: ${repo.url}`);
     return;
   }

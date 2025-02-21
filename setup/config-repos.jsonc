@@ -1,7 +1,7 @@
 {
     "repos": [
       {
-        "active": true,
+        "name": "abap2UI5",
         "url": "https://github.com/abap2UI5/abap2UI5",
         "branches": {
           "Cloud": "main",
@@ -12,7 +12,7 @@
         "targetDir": "01"
       },
       {
-        "active": true,
+        "name": "samples",
         "url": "https://github.com/abap2UI5/samples",
         "branches": {
           "Cloud": "cloud",

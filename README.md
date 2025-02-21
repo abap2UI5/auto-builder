@@ -9,7 +9,7 @@ Features:
 
 
 ### Build Process
-Clone this repository and adjust the configuration for your build process [here:](https://github.com/abap2UI5/builder/blob/test/setup/config-build.jsonc)
+Clone this repository and adjust the configuration for your build process [here:](https://github.com/abap2UI5/builder/blob/setup/config-build.jsonc)
 ```json
 {
   "abap_version": "Cloud",
@@ -33,7 +33,7 @@ Check the output folder containing your newly generated abapGit project. Save it
 
 
 ### Supported Projects
-Check out all supported projects, each with different compatibility [here:](https://github.com/abap2UI5/builder/blob/test/setup/config-repos.jsonc)
+Check out all supported projects, each with different compatibility [here:](https://github.com/abap2UI5/builder/blob/setup/config-repos.jsonc)
 
 | Name      | Renaming | Cloud | v750 | v702 |
 |-----------|----------|--------------|-------------|-------------|

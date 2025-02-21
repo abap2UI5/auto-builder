@@ -17,6 +17,7 @@
       "cleanup": "rm -rf input && rm -rf output && rm -rf src/*",
       "init": "npm run cleanup && rm -rf output && npm run clone_abap2ui5",
       "mirror": "npm run rename && npm run cleanup",
-      "main" : "npm ci && npm run rename"
+      "main" : "npm ci && npm run rename",
+      "build": "node ./script/build.js"
     }
   }

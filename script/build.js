@@ -3,11 +3,11 @@ const fs = require('fs');
 const path = require('path');
 
 // Load configuration from the JSON file
-const config = JSON.parse(fs.readFileSync(path.join(__dirname, 'build-config.jsonc'), 'utf8'));
+const config = JSON.parse(fs.readFileSync(path.join(__dirname, 'config-build.jsonc'), 'utf8'));
 const repos = config.repos;
 
-const inputDir = path.join(__dirname, config.inputDir);
-const outputDir = path.join(__dirname, config.outputDir);
+const inputDir = path.join(__dirname, '..', config.inputDir);
+const outputDir = path.join(__dirname, '..', config.outputDir);
 
 // Ensure the input directory exists
 if (!fs.existsSync(inputDir)) {

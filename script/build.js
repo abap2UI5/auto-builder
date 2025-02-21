@@ -5,6 +5,7 @@ const path = require('path');
 // Load configuration from the JSON file
 const config = JSON.parse(fs.readFileSync(path.join(__dirname, 'config-build.jsonc'), 'utf8'));
 const repos = config.repos;
+const selectedBranch = config.branch;
 
 const inputDir = path.join(__dirname, '..', config.inputDir);
 const outputDir = path.join(__dirname, '..', config.outputDir);
@@ -22,9 +23,26 @@ if (fs.existsSync(outputDir)) {
 // Create the src directory
 fs.mkdirSync(outputDir);
 
+// Pfad zum Template-Ordner
+const templateDir = path.join(__dirname, 'template');
+
+// Kopiere alle Dateien aus dem Template-Ordner in den Zielordner
+if (fs.existsSync(templateDir)) {
+  fs.cpSync(templateDir, outputDir, { recursive: true });
+  console.log(`Alle Dateien aus dem Template-Ordner wurden erfolgreich in den Zielordner kopiert.`);
+} else {
+  console.error(`Template-Ordner nicht gefunden.`);
+}
+
 repos.forEach(repo => {
   if (!repo.active) {
     console.log(`Skipping repository: ${repo.url}`);
+    return;
+  }
+
+  const branch = repo.branches[selectedBranch];
+  if (!branch) {
+    console.error(`Branch ${selectedBranch} not found for repository ${repo.url}`);
     return;
   }
 
@@ -36,7 +54,7 @@ repos.forEach(repo => {
     fs.rmSync(cloneDir, { recursive: true, force: true });
   }
 
-  exec(`git clone --branch ${repo.branch} ${repo.url} ${cloneDir}`, (err, stdout, stderr) => {
+  exec(`git clone --branch ${branch} ${repo.url} ${cloneDir}`, (err, stdout, stderr) => {
     if (err) {
       console.error(`Error cloning ${repo.url}:`, stderr);
       return;
@@ -45,7 +63,7 @@ repos.forEach(repo => {
     console.log(`Successfully cloned: ${repo.url}`);
     
     const sourcePath = path.join(cloneDir, repo.sourceDir);
-    const targetPath = path.join(outputDir, repo.targetDir);
+    const targetPath = path.join(outputDir, '/src' , repo.targetDir);
 
     // Check if the target directory exists and delete it if necessary
     if (fs.existsSync(targetPath)) {

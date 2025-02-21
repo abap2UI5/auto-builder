@@ -1,9 +1,9 @@
 [![build_750](https://github.com/abap2UI5/test/actions/workflows/build_750.yml/badge.svg)](https://github.com/abap2UI5/test/actions/workflows/build_750.yml)
 [![build_750_addons](https://github.com/abap2UI5/builds/actions/workflows/build_750_addons.yml/badge.svg)](https://github.com/abap2UI5/builds/actions/workflows/build_750_addons.yml)
 
-# abap2UI5-builds
+# abap2UI5-builder
 
-This repository provides script to create abap2UI5 projects installable it with a single abapGit pull.
+This repository provides scripts to create abap2UI5 projects installable it with a single abapGit pull.
 
 Features:
 * integrate abap2UI5, frotnend and mulptiple addons in a single project
@@ -11,24 +11,6 @@ Features:
 * install your project wiht a sinlge abapgit pull
 * run multiple builds oin the same system
   
-### Supported Projects
-The follwowing projects are supported:
-| Branch    | Content |
-|-----------|------------------|
-| cloud     | abap2UI5, http handler       |
-| standard      |  abap2UI5, http handler, bsp  |
-|   -    |    |
-| +addons  | layout-variant, table-maintenance, sql-console |
-
-
-### Default Builds
-Some default build get auto generated:
-
-| Branch    | Language Version | System                | 
-|-----------| ---------------------------| ----------------------------|
-| cloud     | ABAP Cloud | S/4 Public Cloud, BTP ABAP Environment |
-| standard  | Standard ABAP | S/4 Private Cloud, S/4 On-Premise, R/3 NetWeaver >750   |
-
 
 ### Build Process
 
@@ -66,13 +48,24 @@ npm run create_project test
 ```
 
 
-### Content
+### Supported Projects
+The follwowing projects are supported, all with different compatibility:
+
 | Branch    | Content |
 |-----------|------------------|
 | cloud     | abap2UI5, http handler       |
 | standard      |  abap2UI5, http handler, bsp  |
 |   -    |    |
 | +addons  | layout-variant, table-maintenance, sql-console |
+
+
+### Default Builds
+Some default build get auto generated and are avalible, just switch to the needed branch:
+
+| Branch    | Language Version | System                | 
+|-----------| ---------------------------| ----------------------------|
+| cloud     | ABAP Cloud | S/4 Public Cloud, BTP ABAP Environment |
+| standard  | Standard ABAP | S/4 Private Cloud, S/4 On-Premise, R/3 NetWeaver >750   |
 
 
 ### Namespace
@@ -82,10 +75,6 @@ Additionally, you can fork this repository and rename the artifacts to your own 
 ```
 ...
 ```
-
-### Build
-Setup your configuration:
-
 
 
 ### Contribution

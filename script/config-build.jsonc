@@ -1,6 +1,7 @@
 {
+  "branch": "Cloud", 
   "inputDir": "input",
-  "outputDir": "src",
+  "outputDir": "output",
   "rename": {
     "active": false,
     "oldName": "z2ui5_(.*)",
@@ -8,16 +9,24 @@
   },
   "repos": [
     {
-      "url": "https://github.com/abap2UI5/abap2UI5",
-      "branch": "702",
       "active": true,
+      "url": "https://github.com/abap2UI5/abap2UI5",
+      "branches": {
+        "Cloud": "main",
+        "v750": "main",
+        "v702": "702"
+      },
       "sourceDir": "src",
       "targetDir": "01"
     },
     {
-      "url": "https://github.com/abap2UI5/samples",
-      "branch": "702",
       "active": true,
+      "url": "https://github.com/abap2UI5/samples",
+      "branches": {
+        "Cloud": "cloud",
+        "v750": "standard",
+        "v702": "702"
+      },
       "sourceDir": "src",
       "targetDir": "02"
     }

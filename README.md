@@ -53,7 +53,8 @@ All artifacts are generated under the namespace `zabap2ui5`. This differs from t
 Credits: Automagic standalone renaming of ABAP objects [(SCN - 20.02.2021)](https://community.sap.com/t5/application-development-blog-posts/automagic-standalone-renaming-of-abap-objects/ba-p/13499851)
 
 ### Concept
-....
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/bad5ed8e-2fa3-4ce4-a0d1-fcd1608b4984" />
+
 
 ### Issues
 For bug reports or feature requests, please open an issue.

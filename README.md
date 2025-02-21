@@ -1,40 +1,32 @@
-[![build_750](https://github.com/abap2UI5/test/actions/workflows/build_750.yml/badge.svg)](https://github.com/abap2UI5/test/actions/workflows/build_750.yml)
-[![build_750_addons](https://github.com/abap2UI5/builds/actions/workflows/build_750_addons.yml/badge.svg)](https://github.com/abap2UI5/builds/actions/workflows/build_750_addons.yml)
+
 
 # abap2UI5-builder
 
-This repository provides scripts to create abap2UI5 projects installable it with a single abapGit pull.
+This repository provides scripts to create abap2UI5 projects that can be installed with a single abapGit pull.
 
 Features:
-* integrate abap2UI5, frotnend and mulptiple addons in a single project
-* rename with abaplint renaming feature
-* install your project wiht a sinlge abapgit pull
-* run multiple builds oin the same system
-  
+* Integrates abap2UI5, frontend, and multiple addons into a single project.
+* Uses abaplint renaming features, supporting multiple builds on the same system
+* Install your project with a single abapGit pull.
+
 
 ### Build Process
-
-Pull this repository and adjust the config for your build process:
+Clone this repository and adjust the configuration for your build process:
 ```json
 {
-  "inputDir": "input",
-  "outputDir": "src",
-  "repos": [
-    {
-      "url": "https://github.com/abap2UI5/abap2UI5",
-      "branch": "702",
-      "active": true,
-      "sourceDir": "src",
-      "targetDir": "01"
-    },
-    {
-      "url": "https://github.com/abap2UI5/samples",
-      "branch": "702",
-      "active": true,
-      "sourceDir": "src",
-      "targetDir": "02"
-    }
-  ]
+  "abap_version": "Cloud",
+  "input": "input",
+  "output": "output",
+  "rename": {
+    "active": false,
+    "oldName": "z2ui5_(.*)",
+    "newName": "z2ui51222_$1"
+  },
+  "repositories": [
+    "abap2UI5",
+    "samples"
+  ],
+  "config_repos": "./config-repos.jsonc"
 }
 ```
 Run the build script:
@@ -42,29 +34,28 @@ Run the build script:
 npm ci
 npm run build
 ```
-check out the folder putput with you newly generaten abapgit project, save in for exmaple in a separated branch with:
-```
-npm run create_project test
-```
+Check the output folder containing your newly generated abapGit project. Save it in a separate branch and install it with abapGit.
 
 
 ### Supported Projects
-The follwowing projects are supported, all with different compatibility:
+The following projects are supported, each with different compatibility:
 
 | Name      | Renaming | Cloud | v750 | v702 |
 |-----------|----------|--------------|-------------|-------------|
-| [abap2UI5](https://github.com/abap2UI5/abap2UI5) | true     | main         | main        | 702         |
-| [samples](https://github.com/abap2UI5/samples)   | false    | cloud        | standard    | 702         |
+| [abap2UI5](https://github.com/abap2UI5/abap2UI5) | true     | true         | true        | true         |
+| [samples](https://github.com/abap2UI5/samples)   | false    | true        | true    | true         |
 
 
 ### Default Builds
-Some default build get auto generated and are avalible, just switch to the needed branch:
+Pre-generated builds are available. Simply switch to the required branch:
 
 | Branch    | Language Version | System                | 
 |-----------| ---------------------------| ----------------------------|
 | cloud     | ABAP Cloud | S/4 Public Cloud, BTP ABAP Environment |
 | standard  | Standard ABAP | S/4 Private Cloud, S/4 On-Premise, R/3 NetWeaver >750   |
 
+[![build_750](https://github.com/abap2UI5/test/actions/workflows/build_750.yml/badge.svg)](https://github.com/abap2UI5/test/actions/workflows/build_750.yml)
+[![build_750_addons](https://github.com/abap2UI5/builds/actions/workflows/build_750_addons.yml/badge.svg)](https://github.com/abap2UI5/builds/actions/workflows/build_750_addons.yml)
 
 ### Namespace
 All artifacts are generated under the namespace `zabap2ui5`. This differs from the main repository to allow both versions to coexist on the same system. One version for modifications and contributions (z2ui5), this one for productive usage (zabap2ui5).

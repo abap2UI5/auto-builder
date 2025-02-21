@@ -11,12 +11,10 @@ Features:
 
 
 ### Build Process
-Clone this repository and adjust the configuration for your build process:
+Clone this repository and adjust the configuration for your build process here:
 ```json
 {
   "abap_version": "Cloud",
-  "input": "input",
-  "output": "output",
   "rename": {
     "active": false,
     "oldName": "z2ui5_(.*)",
@@ -26,7 +24,6 @@ Clone this repository and adjust the configuration for your build process:
     "abap2UI5",
     "samples"
   ],
-  "config_repos": "./config-repos.jsonc"
 }
 ```
 Run the build script:
@@ -38,7 +35,7 @@ Check the output folder containing your newly generated abapGit project. Save it
 
 
 ### Supported Projects
-The following projects are supported, each with different compatibility:
+Check out all supported projects, each with different compatibility here:
 
 | Name      | Renaming | Cloud | v750 | v702 |
 |-----------|----------|--------------|-------------|-------------|

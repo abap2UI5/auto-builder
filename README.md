@@ -56,4 +56,4 @@ Credits: Automagic standalone renaming of ABAP objects [(SCN - 20.02.2021)](http
 ....
 
 ### Issues
-For bug reports or feature requests, please open an issue in the [abap2UI5 repository.](https://github.com/abap2UI5/abap2UI5/issues)
+For bug reports or feature requests, please open an issue.

@@ -9,7 +9,8 @@ const configFilePath = configArgIndex !== -1 && args[configArgIndex + 1] ? args[
 
 // Load configuration from the JSON file
 const config = JSON.parse(fs.readFileSync(configFilePath, 'utf8'));
-const reposConfig = JSON.parse(fs.readFileSync(path.join(__dirname, config.config_repos), 'utf8'));
+//const reposConfig = JSON.parse(fs.readFileSync(path.join(__dirname, config.config_repos), 'utf8'));
+const reposConfig = JSON.parse(fs.readFileSync(path.join(__dirname, './config-repos.jsonc' ), 'utf8'));
 const repos = reposConfig.repos;
 const activeRepos = config.repositories;
 const selectedBranch = config.abap_version;

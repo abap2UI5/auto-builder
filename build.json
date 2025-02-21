@@ -8,6 +8,5 @@
   "repositories": [
     "abap2UI5",
     "samples"
-  ],
-      "config_repos": "./config-repos.jsonc"
+  ]
 }

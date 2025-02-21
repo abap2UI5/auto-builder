@@ -52,6 +52,8 @@ Additionally, you can fork this repository and rename the artifacts to your own 
 ```
 ...
 ```
+### Credits
+* Automagic standalone renaming of ABAP objects [(SCN - 20.02.2021)](https://community.sap.com/t5/application-development-blog-posts/automagic-standalone-renaming-of-abap-objects/ba-p/13499851)
 
 ### Issues
 For bug reports or feature requests, please open an issue in the [abap2UI5 repository.](https://github.com/abap2UI5/abap2UI5/issues)

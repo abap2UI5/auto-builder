@@ -1,0 +1,11 @@
+{
+  "branch": "Cloud", 
+  "inputDir": "input",
+  "outputDir": "output",
+  "rename": {
+    "active": false,
+    "oldName": "z2ui5_(.*)",
+    "newName": "z2ui51222_$1"
+  },
+  "config_repos": "./config-repos.jsonc"
+}

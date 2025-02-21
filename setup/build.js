@@ -2,9 +2,15 @@ const { exec } = require('child_process');
 const fs = require('fs');
 const path = require('path');
 
+// Get the config file path from the command line argument or use the default
+const args = process.argv.slice(2);
+const configArgIndex = args.indexOf('--config');
+const configFilePath = configArgIndex !== -1 && args[configArgIndex + 1] ? args[configArgIndex + 1] : path.join(__dirname, '.setup/config-build.jsonc');
+
 // Load configuration from the JSON file
-const config = JSON.parse(fs.readFileSync(path.join(__dirname, 'config-build.jsonc'), 'utf8'));
-const repos = config.repos;
+const config = JSON.parse(fs.readFileSync(configFilePath, 'utf8'));
+const reposConfig = JSON.parse(fs.readFileSync(path.join(__dirname, config.config_repos), 'utf8'));
+const repos = reposConfig.repos;
 const selectedBranch = config.branch;
 
 const inputDir = path.join(__dirname, '..', config.inputDir);

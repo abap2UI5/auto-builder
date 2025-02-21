@@ -1,13 +1,13 @@
 {
-  "branch": "Cloud",
-  "inputDir": "input",
-  "outputDir": "output",
+  "abap_version": "Cloud",
+  "input": "input",
+  "output": "output",
   "rename": {
     "active": false,
     "oldName": "z2ui5_(.*)",
     "newName": "z2ui51222_$1"
   },
-  "active_repos": [
+  "repositories": [
     "abap2UI5",
     "samples"
   ],

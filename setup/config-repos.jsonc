@@ -3,6 +3,7 @@
       {
         "name": "abap2UI5",
         "url": "https://github.com/abap2UI5/abap2UI5",
+        "renaming" : true,
         "branches": {
           "Cloud": "main",
           "v750": "main",
@@ -14,6 +15,7 @@
       {
         "name": "samples",
         "url": "https://github.com/abap2UI5/samples",
+        "renaming" : false,
         "branches": {
           "Cloud": "cloud",
           "v750": "standard",

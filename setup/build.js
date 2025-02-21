@@ -11,11 +11,11 @@ const configFilePath = configArgIndex !== -1 && args[configArgIndex + 1] ? args[
 const config = JSON.parse(fs.readFileSync(configFilePath, 'utf8'));
 const reposConfig = JSON.parse(fs.readFileSync(path.join(__dirname, config.config_repos), 'utf8'));
 const repos = reposConfig.repos;
-const activeRepos = config.active_repos;
-const selectedBranch = config.branch;
+const activeRepos = config.repositories;
+const selectedBranch = config.abap_version;
 
-const inputDir = path.join(__dirname, '..', config.inputDir);
-const outputDir = path.join(__dirname, '..', config.outputDir);
+const inputDir = path.join(__dirname, '..', config.input);
+const outputDir = path.join(__dirname, '..', config.output);
 
 // Ensure the input directory exists
 if (!fs.existsSync(inputDir)) {

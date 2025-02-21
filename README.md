@@ -51,12 +51,10 @@ npm run create_project test
 ### Supported Projects
 The follwowing projects are supported, all with different compatibility:
 
-| Branch    | Content |
-|-----------|------------------|
-| cloud     | abap2UI5, http handler       |
-| standard      |  abap2UI5, http handler, bsp  |
-|   -    |    |
-| +addons  | layout-variant, table-maintenance, sql-console |
+| Name      | Renaming | Cloud | v750 | v702 |
+|-----------|----------|--------------|-------------|-------------|
+| [abap2UI5](https://github.com/abap2UI5/abap2UI5) | true     | main         | main        | 702         |
+| [samples](https://github.com/abap2UI5/samples)   | false    | cloud        | standard    | 702         |
 
 
 ### Default Builds

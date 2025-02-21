@@ -3,9 +3,20 @@
 
 # abap2UI5-builds
 
-This repository provides builds of abap2UI5 for various SAP systems. Switch to the branch you need and install it with a single abapGit pull.
+This repository provides script to create abap2UI5 projects installable it with a single abapGit pull.
 
-#### Branch
+# Projects
+The follwowing projects are supported:
+| Branch    | Content |
+|-----------|------------------|
+| cloud     | abap2UI5, http handler       |
+| standard      |  abap2UI5, http handler, bsp  |
+|   -    |    |
+| +addons  | layout-variant, table-maintenance, sql-console |
+
+
+#### Default Builds
+Some default build get auto generated:
 
 | Branch    | Language Version | System                | 
 |-----------| ---------------------------| ----------------------------|
@@ -20,6 +31,8 @@ This repository provides builds of abap2UI5 for various SAP systems. Switch to t
 |   -    |    |
 | +addons  | layout-variant, table-maintenance, sql-console |
 
+
+#### Build Process
 
 #### Namespace
 All artifacts are generated under the namespace `zabap2ui5`. This differs from the main repository to allow both versions to coexist on the same system. One version for modifications and contributions (z2ui5), this one for productive usage (zabap2ui5).

@@ -3,9 +3,9 @@
 This repository provides scripts to create abap2UI5 projects, installable with a single abapGit pull.
 
 Features:
-* Integrates abap2UI5, frontend, and multiple addons into a single project.
+* Integrates abap2UI5, frontend, and multiple addons into a single project
 * Uses abaplint renaming features, supporting multiple builds on the same system
-* Install your project with a single abapGit pull.
+* Install your project with a single abapGit pull
 
 
 ### Build Process

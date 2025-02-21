@@ -4,7 +4,8 @@ Automatically create your own abap2UI5 version. Choose the language version you 
 
 Features:
 * Integrates abap2UI5, frontend, and multiple addons into a single project
-* Supports multiple builds on the same system via abaplint renaming feature
+* Rename all artefacts into your custom namespace
+* Supports multiple builds on the same system
 * Install your new project with a single abapGit pull
 
 ### Build Process

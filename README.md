@@ -1,12 +1,11 @@
-# abap2UI5-builder
+# abap2UI5-auto-builder
 
-This repository provides scripts to create abap2UI5 projects, installable with a single abapGit pull.
+Automatically create your own abap2UI5 version. Choose the language version you need and select the frontend and addons.
 
 Features:
 * Integrates abap2UI5, frontend, and multiple addons into a single project
 * Uses abaplint renaming features, supporting multiple builds on the same system
-* Install your project with a single abapGit pull
-
+* Install your new project with a single abapGit pull
 
 ### Build Process
 Clone this repository and adjust the configuration for your build process [here:](https://github.com/abap2UI5/builder/blob/main/build.json)

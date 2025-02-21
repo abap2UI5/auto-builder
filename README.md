@@ -5,7 +5,7 @@
 
 This repository provides script to create abap2UI5 projects installable it with a single abapGit pull.
 
-# Projects
+#### Supported Projects
 The follwowing projects are supported:
 | Branch    | Content |
 |-----------|------------------|

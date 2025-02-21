@@ -9,7 +9,7 @@ Features:
 
 
 ### Build Process
-Clone this repository and adjust the configuration for your build process [here:](https://github.com/abap2UI5/builder/blob/main/setup/config-build.jsonc)
+Clone this repository and adjust the configuration for your build process [here:](https://github.com/abap2UI5/builder/blob/main/build.json)
 ```json
 {
   "abap_version": "Cloud",
@@ -21,7 +21,7 @@ Clone this repository and adjust the configuration for your build process [here:
   "repositories": [
     "abap2UI5",
     "samples"
-  ],
+  ]
 }
 ```
 Run the build script:

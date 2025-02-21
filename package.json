@@ -18,6 +18,6 @@
       "init": "npm run cleanup && rm -rf output && npm run clone_abap2ui5",
       "mirror": "npm run rename && npm run cleanup",
       "main" : "npm ci && npm run rename",
-      "build": "node ./setup/build.js --config build.jsonc && rm -rf input"
+      "build": "node ./setup/build.js --config build.json && rm -rf input"
     }
   }

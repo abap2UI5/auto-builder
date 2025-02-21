@@ -5,7 +5,7 @@ const path = require('path');
 // Get the config file path from the command line argument or use the default
 const args = process.argv.slice(2);
 const configArgIndex = args.indexOf('--config');
-const configFilePath = configArgIndex !== -1 && args[configArgIndex + 1] ? args[configArgIndex + 1] : path.join(__dirname, '.setup/build.jsonc');
+const configFilePath = configArgIndex !== -1 && args[configArgIndex + 1] ? args[configArgIndex + 1] : path.join(__dirname, 'build.json');
 
 // Load configuration from the JSON file
 const config = JSON.parse(fs.readFileSync(configFilePath, 'utf8'));

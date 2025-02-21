@@ -29,7 +29,7 @@ Run the build script:
 npm ci
 npm run build
 ```
-Find your newly generated abapGit project in the src folder. Pull this to your ABAP system, and you're ready to go.
+Find your newly generated abapGit project in the `src` folder. Pull this to your ABAP system, and you're ready to go.
 
 ### Supported Projects
 Check out all supported projects, each with different compatibility [here:](https://github.com/abap2UI5/builder/blob/main/setup/config-repos.jsonc)

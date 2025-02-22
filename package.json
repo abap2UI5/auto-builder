@@ -12,9 +12,9 @@
       "@abaplint/cli": "^2.113.100"
     },
     "scripts" : {
-      "clone": "node ./setup/build.js --config build.json && rm -rf input",
-      "rename": "npx abaplint ./setup/config-rename.jsonc --rename && rm -rf dist/src/* && cp -r setup/dist/src/* dist/src/",
-      "abaplint_check":  "cd dist && npx abaplint",
+      "clone": "node ./setup/build.js --config ./example/build.jsonc && rm -rf input",
+      "rename": "npx abaplint ./example/rename.jsonc --rename && rm -rf dist/src/* && cp -r setup/dist/src/* dist/src/",
+      "abaplint":  "cp ./example/abaplint.jsonc dist && cd dist && npx abaplint && cd ..",
       "create_branch" : "git checkout -b build6 && git rm -r --cached . && git add dist/* -f && git commit -m 'test' && git push origin build6"      
     }
   }

@@ -13,25 +13,27 @@ Features:
 ```json
 {
   "abap_version": "Cloud",
-  "rename": {
-    "active": false,
-    "oldName": "z2ui5_(.*)",
-    "newName": "zabap2ui5_$1"
-  },
   "repositories": [
     "abap2UI5",
     "samples"
   ]
 }
 ```
-2. Run the build process:
+Run the clone process:
 ```
 npm ci
 npm run clone
+```
+2. Adjust the configuration for your rename process:
+Run the rename process:
+```
 npm run rename
+```
+3. Add static code check with abaplint:
+```
 npm run abaplint_check
 ```
-3. Find your newly generated abapGit project in the `dist` folder. Create a new branch with for this build with:
+4. Find your newly generated abapGit project in the `dist` folder. Create a new branch with for this build with:
 ```
 npm run create_build
 ```

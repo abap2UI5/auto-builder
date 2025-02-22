@@ -62,5 +62,8 @@ Credits: Automagic standalone renaming of ABAP objects [(SCN - 20.02.2021)](http
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/bad5ed8e-2fa3-4ce4-a0d1-fcd1608b4984" />
 
 
+### Limitations & Todo
+* Renaming for Frontend with customer namespace eg. `/ZZZ/` [here](https://github.com/abap2UI5/abap2UI5/issues/1493)
+
 ### Issues
 For bug reports or feature requests, please open an issue.

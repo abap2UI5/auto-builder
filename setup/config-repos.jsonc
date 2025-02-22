@@ -34,7 +34,7 @@
           "v702": ""
         },
         "sourceDir": "src",
-        "targetDir": "02"
+        "targetDir": "03"
       },
       {
         "name": "layout-variant-management",
@@ -46,7 +46,7 @@
           "v702": ""
         },
         "sourceDir": "src",
-        "targetDir": "02"
+        "targetDir": "04"
       }
     ]
   }

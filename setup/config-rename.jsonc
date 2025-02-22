@@ -1,7 +1,6 @@
 {
     "global": {
-      "files": "/input/01/**/*.*",
-      "noIssues": [ "/input/02/01", "/input/02/01"  ]
+      "files": "/../dist/src/**/*.*"
     },
     "dependencies": [
         {
@@ -11,12 +10,11 @@
         }
     ],
     "rename": {
-      "output": "XX",
       "patterns": [
         {
           "type": "CLAS|INTF|TABL",
           "oldName": "z2ui5_(.*)",
-          "newName": "z2ui51222_$1"
+          "newName": "zabap2ui5_$1"
         }
       ]
     },

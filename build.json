@@ -6,7 +6,6 @@
     "newName": "z2ui51222_$1"
   },
   "repositories": [
-    "abap2UI5",
-    "samples"
+    "abap2UI5"
   ]
 }

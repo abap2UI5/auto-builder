@@ -46,7 +46,6 @@ if (fs.existsSync(templateDir)) {
 
 repos.forEach(repo => {
   if (!activeRepos.includes(repo.name)) {
-    console.log(`Skipping repository: ${repo.url}`);
     return;
   }
 
@@ -87,4 +86,11 @@ repos.forEach(repo => {
       console.error(`Directory ${repo.sourceDir} not found in ${repoName}`);
     }
   });
+});
+
+// Log message if no repository found for a name
+activeRepos.forEach(activeRepo => {
+  if (!repos.some(repo => repo.name === activeRepo)) {
+    console.error(`No repository found for name: ${activeRepo}`);
+  }
 });

@@ -9,7 +9,7 @@ Features:
 * Install your new project with a single abapGit pull
 
 ### Build Process
-Clone this repository and adjust the configuration for your build process [here:](https://github.com/abap2UI5/builder/blob/main/build.json)
+1. Clone this repository and adjust the configuration for your build process [here:](https://github.com/abap2UI5/builder/blob/main/build.json)
 ```json
 {
   "abap_version": "Cloud",
@@ -24,16 +24,16 @@ Clone this repository and adjust the configuration for your build process [here:
   ]
 }
 ```
-Run the build script:
+2. Run the build script:
 ```
 npm ci
 npm run build
 ```
-Find your newly generated abapGit project in the `dist` folder. Create a new branch with for this build with:
+4. Find your newly generated abapGit project in the `dist` folder. Create a new branch with for this build with:
 ```
 npm run create_build
 ```
-Pull this branch to your ABAP system, and you're ready to go.
+4. Pull this branch to your ABAP system, and you're ready to go.
 
 ### Supported Projects
 Check out all supported projects, each with different compatibility [here:](https://github.com/abap2UI5/builder/blob/main/setup/config-repos.jsonc)

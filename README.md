@@ -40,10 +40,10 @@ Check out all supported projects, each with different compatibility [here:](http
 
 | Name      | Renaming | Cloud | v750 | v702 |
 |-----------|----------|--------------|-------------|-------------|
-| [abap2UI5](https://github.com/abap2UI5/abap2UI5) | true     | true         | true        | true         |
-| [samples](https://github.com/abap2UI5/samples)   | false    | true        | true    | true         |
-| [layout-variant-management](https://github.com/abap2UI5-addons/layout-variant-management)   | true    | true        | true    | false         |
-| [table-maintenance](https://github.com/abap2UI5-addons/table-maintenance)   | true    | true        | true    | false         |
+| [abap2UI5](https://github.com/abap2UI5/abap2UI5) | X     | X         | X        | X         |
+| [samples](https://github.com/abap2UI5/samples)   |     | X        | X    | X         |
+| [layout-variant-management](https://github.com/abap2UI5-addons/layout-variant-management)   | X    | X        | X    |          |
+| [table-maintenance](https://github.com/abap2UI5-addons/table-maintenance)   | X    | X        | X    |          |
 
 Your project is not listed here? Feel free to extend the list and send a PR.
 

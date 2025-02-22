@@ -27,7 +27,9 @@ Features:
 2. Run the build script:
 ```
 npm ci
-npm run build
+npm run clone
+npm run rename
+npm run abaplint_check
 ```
 3. Find your newly generated abapGit project in the `dist` folder. Create a new branch with for this build with:
 ```

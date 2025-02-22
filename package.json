@@ -12,12 +12,9 @@
       "@abaplint/cli": "^2.113.100"
     },
     "scripts" : {
-      "clone_abap2ui5": "git clone https://github.com/abap2UI5/abap2UI5.git input/abap2UI5",
+      "clone": "node ./setup/build.js --config build.json && rm -rf input",
       "rename": "npx abaplint ./setup/config-rename.jsonc --rename && rm -rf dist/src/* && cp -r setup/dist/src/* dist/src/",
-      "cleanup": "rm -rf input && rm -rf output",
-      "init": "npm run cleanup && rm -rf output && npm run clone_abap2ui5",
-      "mirror": "npm run rename && npm run cleanup",
-      "main" : "npm ci && npm run rename",
-      "build": "node ./setup/build.js --config build.json && rm -rf input"
+      "abaplint_check":  "cd dist && npx abaplint",
+      "create_branch" : "git checkout -b build6 && git rm -r --cached . && git add dist/* -f && git commit -m 'test' && git push origin build6"      
     }
   }

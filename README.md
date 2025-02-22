@@ -24,7 +24,7 @@ Features:
   ]
 }
 ```
-2. Run the build script:
+2. Run the build process:
 ```
 npm ci
 npm run clone

@@ -23,6 +23,30 @@
         },
         "sourceDir": "src",
         "targetDir": "02"
+      },
+      {
+        "name": "table-maintenance",
+        "url": "https://github.com/abap2UI5-addons/table-maintenance",
+        "renaming" : false,
+        "branches": {
+          "Cloud": "main",
+          "v750": "main",
+          "v702": ""
+        },
+        "sourceDir": "src",
+        "targetDir": "02"
+      },
+      {
+        "name": "layout-variant-management",
+        "url": "https://github.com/abap2UI5-addons/layout-variant-management",
+        "renaming" : false,
+        "branches": {
+          "Cloud": "main",
+          "v750": "main",
+          "v702": ""
+        },
+        "sourceDir": "src",
+        "targetDir": "02"
       }
     ]
   }

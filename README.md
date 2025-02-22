@@ -29,7 +29,7 @@ Features:
 npm ci
 npm run build
 ```
-4. Find your newly generated abapGit project in the `dist` folder. Create a new branch with for this build with:
+3. Find your newly generated abapGit project in the `dist` folder. Create a new branch with for this build with:
 ```
 npm run create_build
 ```
